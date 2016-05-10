@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Violate Responsive Admin Template">
+        <meta name="keywords" content="Super Admin, Admin, Template, Bootstrap">
+
+        <title>文章列表</title>
+            
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">	
+        <link href="css/calendar.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/icons.css" rel="stylesheet">
+        <link href="css/generics.css" rel="stylesheet"> 
+    </head>
+    <body id="skin-blur-chrome">
+        
+		<!-- header -->
+        <header id="header" class="media">
+            <a class="logo pull-left" href="index.html">SUPER ADMIN 1.0</a>
+            <div class="media-body">
+                <div class="media" id="top-menu">
+                    
+
+                    <div id="time" class="pull-right">
+                        <span id="hours"></span>
+                        :
+                        <span id="min"></span>
+                        :
+                        <span id="sec"></span>
+                    </div>
+                
+                </div>
+            </div>
+        </header>
+        
+		<div class="clearfix"></div>
+		
+		<section id="main" class="p-relative" role="main">
+			<!-- Shortcuts -->
+			
+			<!-- 文章界面 -->
+			
+			<!-- 右上角导航 -->		
+			<ol class="breadcrumb hidden-xs">
+				<li><a href="index.html">主页</a></li>
+				<li><a href="article-default.html">文章列表</a></li>
+				<li class="active">默认</li>
+			</ol>
+			
+			<h4 class="page-title">文章列表</h4>
+			
+			<header class="listview-header media" >                                  
+				<!--
+				<ul class="list-inline pull-right m-t-5 m-b-0">
+					<li>
+						<a href="" title="" class="tooltips">
+							<i class="sa-list-back"></i>
+						</a>
+					</li>
+					<li>
+						<a href="" title="" class="tooltips">
+							<i class="sa-list-forwad"></i>
+						</a>
+					</li>
+				</ul>
+				-->
+				
+				<div class="list-inline pull-right">
+					<button type="button" class="btn btn-default">
+						<a class="glyphicon glyphicon-time" href="article-time.html">&nbsp;时间</a>
+					</button>
+					<button type="button" class="btn btn-default">
+						<a class="glyphicon glyphicon-user" href="article-group.html">&nbsp;部门</a>
+					</button>
+					<button type="button" class="btn btn-default">
+						<a class="glyphicon glyphicon-globe" href="article-map.html">&nbsp;地图</a>
+					</button>
+				</div>
+				
+				<ul class="list-inline list-mass-actions pull-left">
+					<li>
+						<a href="" title="刷新" class="tooltips">
+							<i class="sa-list-refresh"></i>
+						</a>
+					</li>
+					<li class="show-on" style="display: none;">
+						<a href="" title="Move" class="tooltips">
+							<i class="sa-list-move"></i>
+						</a>
+					</li>
+					<li class="show-on" style="display: none;">
+						<a href="" title="Delete" class="tooltips">
+							<i class="sa-list-delete"></i>
+						</a>
+					</li>
+				</ul>
+			 	<div class="col-md-4 pull-right">
+                    <div class="row">
+                    	<input class="input-sm col-md-8 message-search" type="text" placeholder="搜索...">
+                        <div class="col-md-4">
+                        <button class="btn btn-sm btn-alt m-r-5">
+                        	<a href="article-search.html">高级检索</a>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+				
+				
+			</header>
+
+			<!--
+			<div class="col-md-offset-0 col-md-12">
+				<div class="row listview-header">
+					<div class="list-inline col-md-3">
+						<h3>
+						<a href="index.html">主页</a>
+						>
+						<a href="#">文章列表</a>
+						</h3>
+					</div>
+					
+					<div class="list-inline pull-right">
+						<button type="button" class="btn btn-default">
+							<a class="glyphicon glyphicon-time" href="./article-time.html">&nbsp;时间</a>
+						</button>
+						<button type="button" class="btn btn-default">
+							<a class="glyphicon glyphicon-user" href="./article-group.html">&nbsp;按组</a>
+						</button>
+						<button type="button" class="btn btn-default">
+							<a class="glyphicon glyphicon-globe" href="./article-map.html">&nbsp;地图</a>
+						</button>
+					</div>
+					
+					<div class="list-inline">
+						<h3>
+						<input class="message-search" type="text" placeholder="Search....">
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;搜索
+						</button>
+						</h3>
+					</div>
+					
+					
+				</div>
+			</div>
+			-->
+			
+			<div class="block-area" id="content-boxes">
+						 
+				 <div class="row">
+					  <div class="col-sm-6 col-md-3">
+						   <div class="thumbnail tile">
+								<a href="article-content.html">
+									<img src="img/gallery/1.jpg" alt="">
+								</a>
+								<div class="p-15">
+									<h4>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2小时前</h4>
+									<p style="font-size:16px">
+										<a href="article-content.html">总书记网信工作讲话勾勒互联网发展蓝图</a>
+									</p>
+									<p>
+										<a href="#" class="btn btn-info btn-sm">标签1</a>
+										<a href="#" class="btn btn-info btn-sm">标签2</a>
+									</p>
+								</div>
+						   </div>
+					  </div>
+					  
+					  <div class="col-sm-6 col-md-3">
+						   <div class="thumbnail tile">
+								<a href="article-content.html">
+									<img src="img/gallery/3.jpg" alt="">
+								</a>
+								<div class="p-15">
+									<h4 >张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2小时前</h4>
+									<p style="font-size:16px">
+										<a href="article-content.html">总书记网信工作讲话勾勒互联网发展蓝图</a>
+									</p>
+									<p>
+										<a href="#" class="btn btn-info btn-sm">标签1</a>
+										<a href="#" class="btn btn-info btn-sm">标签2</a>
+									</p>
+								</div>
+						   </div>
+					  </div>
+					  
+					  <div class="col-sm-6 col-md-3">
+						   <div class="thumbnail tile">
+								<a href="article-content.html">
+									<img src="img/gallery/5.jpg" alt="">
+								</a>
+								<div class="p-15">
+									<h4>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6小时前</h4>
+									<p style="font-size:16px">
+										<a href="article-content.html">总书记网信工作讲话勾勒互联网发展蓝图</a>
+									</p>
+									<p>
+										<a href="#" class="btn btn-info btn-sm">标签1</a>
+										<a href="#" class="btn btn-info btn-sm">标签2</a>
+									</p>
+								</div>
+						   </div>
+					  </div>
+					  <div class="col-sm-6 col-md-3">
+						   <div class="thumbnail tile">
+								<a href="article-content.html">
+									<img src="img/gallery/4.jpg" alt="">
+								</a>
+								<div class="p-15">
+									<h4>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6小时前</h4>
+									<p style="font-size:16px">
+										<a href="article-content.html">总书记网信工作讲话勾勒互联网发展蓝图</a>
+									</p>
+									<p>
+										<a href="#" class="btn btn-info btn-sm">标签1</a>
+										<a href="#" class="btn btn-info btn-sm">标签2</a>
+									</p>
+								</div>
+						   </div>
+					  </div>
+				 </div>
+			
+				<div class="row">
+					  <div class="col-sm-6 col-md-3">
+						   <div class="thumbnail tile">
+								<a href="article-content.html">
+									<img src="img/gallery/1.jpg" alt="">
+								</a>
+								<div class="p-15">
+									<h4>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2小时前</h4>
+									<p style="font-size:16px">
+										<a href="article-content.html">总书记网信工作讲话勾勒互联网发展蓝图</a>
+									</p>
+									<p>
+										<a href="#" class="btn btn-info btn-sm">标签1</a>
+										<a href="#" class="btn btn-info btn-sm">标签2</a>
+									</p>
+								</div>
+						   </div>
+					  </div>
+					  
+					  <div class="col-sm-6 col-md-3">
+						   <div class="thumbnail tile">
+								<a href="article-content.html">
+									<img src="img/gallery/3.jpg" alt="">
+								</a>
+								<div class="p-15">
+									<h4 >张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2小时前</h4>
+									<p style="font-size:16px">
+										<a href="article-content.html">总书记网信工作讲话勾勒互联网发展蓝图</a>
+									</p>
+									<p>
+										<a href="#" class="btn btn-info btn-sm">标签1</a>
+										<a href="#" class="btn btn-info btn-sm">标签2</a>
+									</p>
+								</div>
+						   </div>
+					  </div>
+					  
+					  <div class="col-sm-6 col-md-3">
+						   <div class="thumbnail tile">
+								<a href="article-content.html">
+									<img src="img/gallery/5.jpg" alt="">
+								</a>
+								<div class="p-15">
+									<h4>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6小时前</h4>
+									<p style="font-size:16px">
+										<a href="article-content.html">总书记网信工作讲话勾勒互联网发展蓝图</a>
+									</p>
+									<p>
+										<a href="#" class="btn btn-info btn-sm">标签1</a>
+										<a href="#" class="btn btn-info btn-sm">标签2</a>
+									</p>
+								</div>
+						   </div>
+					  </div>
+					  <div class="col-sm-6 col-md-3">
+						   <div class="thumbnail tile">
+								<a href="article-content.html">
+									<img src="img/gallery/4.jpg" alt="">
+								</a>
+								<div class="p-15">
+									<h4>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6小时前</h4>
+									<p style="font-size:16px">
+										<a href="article-content.html">总书记网信工作讲话勾勒互联网发展蓝图</a>
+									</p>
+									<p>
+										<a href="#" class="btn btn-info btn-sm">标签1</a>
+										<a href="#" class="btn btn-info btn-sm">标签2</a>
+									</p>
+								</div>
+						   </div>
+					  </div>
+				 </div>
+				
+				<div class="media text-center">
+					<ul class="pagination">
+						<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+			
+		<!--
+		<div class="col-md-offset-1 col-md-10">	
+			<br />
+			<div class="row listview">
+				<div class="media col-md-3" style="background-image:url(img/news1.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news2.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news1.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news2.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<br />
+			<div class="row listview">
+				<div class="media col-md-3" style="background-image:url(img/news1.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news2.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news1.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news2.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<br />
+			<div class="row listview">
+				<div class="media col-md-3" style="background-image:url(img/news1.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news2.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news1.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news2.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<br />
+			<div class="row listview">
+				<div class="media col-md-3" style="background-image:url(img/news1.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news2.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news1.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div class="media col-md-3" style="background-image:url(img/news2.jpg);background-repeat:no repeat;">
+					<a href="具体文章.html">
+						<div class="media-body">
+							<h4>张三 -- 2小时前</h4>
+							<h5>总书记网信工作讲话勾勒互联网发展蓝图</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+						
+		</div>	
+		-->
+	
+		
+        <!-- Javascript Libraries -->
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script> <!-- jQuery Library -->
+        
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!--  Form Related -->
+        <script src="js/icheck.js"></script> <!-- Custom Checkbox + Radio -->
+        
+        <!-- Text Editor -->
+        <script src="js/editor.min.js"></script> <!-- WYSIWYG Editor -->
+        
+        <!-- UX -->
+        <script src="js/scroll.min.js"></script> <!-- Custom Scrollbar -->
+        
+        <!-- Other -->
+        <script src="js/calendar.min.js"></script> <!-- Calendar -->
+        <script src="js/feeds.min.js"></script> <!-- News Feeds -->
+        
+        
+        <!-- All JS functions -->
+        <script src="js/functions.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //Editor
+                $('.message-editor').summernote({
+                    toolbar: [
+                      //['style', ['style']], // no style button
+                      ['style', ['bold', 'italic', 'underline', 'clear']],
+                      ['fontsize', ['fontsize']],
+                      ['color', ['color']],
+                      ['para', ['ul', 'ol', 'paragraph']],
+                      //['height', ['height']],
+                      ['insert', ['picture', 'link']], // no insert buttons
+                      //['table', ['table']], // no table button
+                      //['help', ['help']] //no help button
+                    ],
+                    height: 200,
+                    resizable: false
+                });
+                
+                $('.message-options').click(function(){
+                    $(this).closest('.modal').find('.note-toolbar').toggle(); 
+                });  
+            });
+        </script>
+    </body>
+</html>
+
